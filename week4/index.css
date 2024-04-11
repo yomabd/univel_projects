@@ -55,23 +55,15 @@ top: 0;
 #welcome{
     align-self: center;
     min-width: 40%;
-    overflow: hidden;
+    overflow: cover;
     white-space: nowrap;
-    animation: animate 2s both forwards;
-    /* border: solid green 2px; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-   
-
-
+    /* animation: animate 3s linear forwards infinite; */
 }
 .bio h1{
 
     text-align: center;
     line-height: .6em;
     margin-bottom: 2em;
-    /* white-space: nowrap; */
 }
 .bio p{
     line-height: 1.5em;
@@ -120,7 +112,7 @@ padding: 3em 5em;
 
 }
 .project{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     /* flex: 1 1 200px; */
     background-color: #bf550a80;
@@ -129,6 +121,8 @@ padding: 3em 5em;
     line-height: 1.2em;
     gap: .8em;
     display: none;
+    width: 40%;
+    height: 40%;
 }
 .active{
     display: block;

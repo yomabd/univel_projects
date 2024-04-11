@@ -41,15 +41,14 @@ const myTitle =  JSON.parse(myTitle_Json)
 
 var index =0;
 // apply the concepts on the index.html page
-console.log()
 function changeTitle(){
     console.log(myTitle.titles[index],index)
     title.textContent = myTitle.titles[index]
     index++ 
     if (index === myTitle.titles.length) index = 0;
-    // setTimeout(changeTitle,3000)
+    setTimeout(changeTitle,3000)
 
 }
-setInterval(changeTitle, 2000);
-// window.onload = changeTitle;
+// setInterval(changeTitle, 2000);
+window.onload = changeTitle;
 
